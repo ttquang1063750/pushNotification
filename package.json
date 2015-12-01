@@ -1,0 +1,11 @@
+{
+  "name": "test push notification",
+  "version": "1.0.0",
+  "description": "test ios and android application that has setting push notification",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "quangtang",
+  "license": "ISC"
+}
