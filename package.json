@@ -1,5 +1,5 @@
 {
-  "name": "test push notification",
+  "name": "notification",
   "version": "1.0.0",
   "description": "test ios and android application that has setting push notification",
   "main": "app.js",
@@ -7,5 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "quangtang",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "node-gcm": "^0.13.0"
+  }
 }
