@@ -20,8 +20,8 @@ app.get('/', function (req, res) {
 app.post("/gcm", function (req, res) {
   var token = req.body.token,
       apiKey = req.body.apiKey,
-      messageData = req.body.message,
-      os = req.body.os;
+      messageData = req.body.message || "dummy message",
+      os = req.body.os  || "android";
 
 
   var message = new gcm.Message();
@@ -46,8 +46,8 @@ app.post("/gcm", function (req, res) {
 
 app.post("/apns", function (req, res) {
   var token = req.body.token,
-      messageData = req.body.message,
-      os = req.body.os,
+      messageData = req.body.message || "dummy message",
+      os = req.body.os || "ios",
       path = require("path"),
       rootFolder = path.dirname(require.main.filename),
       pfx = rootFolder  + '/key/cer.p12',
